@@ -1,0 +1,11 @@
+﻿  scanner.c
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1): warning C4001: nonstandard extension 'single line comment' was used
+  platy.c
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1): warning C4001: nonstandard extension 'single line comment' was used
+  parser.c
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\process.h(1): warning C4001: nonstandard extension 'single line comment' was used
+  buffer.c
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1): warning C4001: nonstandard extension 'single line comment' was used
+  Generating Code...
+  CParser.vcxproj -> c:\users\abajo\documents\visual studio 2015\Projects\CParser\Debug\CParser.exe
+  CParser.vcxproj -> c:\users\abajo\documents\visual studio 2015\Projects\CParser\Debug\CParser.pdb (Full PDB)
