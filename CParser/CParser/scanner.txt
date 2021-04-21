@@ -1,7 +1,7 @@
 /*************************************************************************************
 File name :		Scanner.c
 Compiler :		MS Visual Studio 15
-Author :		Ababiya Abajobir / Thipichanth Sellathamby
+Author :		Sharusshan Sinnadurai
 Course :		CST 8152 – Compilers, Lab Section : 10
 Assignment :	2 - Scanner
 Date :			November 22, 2018
@@ -71,7 +71,7 @@ int scanner_init(Buffer * psc_buf) {
 
 /**********************************************************************************************************
 * Purpose:			Performs token recognition by reading lexeme from the input stream (sc_buf)
-* Author:			Ababiya Abajobir / Thipichanth Sellathamby
+* Author:			Sharusshan Sinnadurai
 * History/Versions:	2.0
 * Called Function:	b_getc(), b_retract(), b_getcoffset(), b_mark(), b_addc(), b_free(), b_reset();
 
@@ -336,7 +336,7 @@ int get_next_state(int state, char c, int *accept) {
 
 /**********************************************************************************************************
 * Purpose:			Defines which column each char goes into
-* Author:			Ababiya / Thipichanth
+* Author:			Sharusshan Sinnadurai
 * History/Versions:	1.0
 * Called Function:	isaplpha(), isdigit()
 * Parameters:		character c
@@ -391,7 +391,7 @@ REPLACE XX WITH THE CORRESPONDING ACCEPTING STATE NUMBER */
 
 /**********************************************************************************************************
 * Purpose:			ACCEPTING FUNCTION FOR THE arithmentic variable identifier AND keywords(VID - AVID / KW)
-* Author:			Ababiya / Thipichanth
+* Author:			Sharusshan Sinnadurai
 * History/Versions:	1.0
 * Called Function:  strcmp(), strlen(), isKeyword()
 * Parameters:		char array lexeme
@@ -452,7 +452,7 @@ Token aa_func02(char lexeme[]) {
 
 /**********************************************************************************************************
 * Purpose:			ACCEPTING FUNCTION FOR THE string variable identifier(VID - SVID)
-* Author:			Ababiya / Thipichanth
+* Author:			Sharusshan Sinnadurai
 * History/Versions:	1.0
 * Called Function:  strncpy(), strlen(), memset(),
 * Parameters:		char array lexeme
@@ -500,7 +500,7 @@ Token aa_func03(char lexeme[]) {
 
 /**********************************************************************************************************
 * Purpose:			ACCEPTING FUNCTION FOR THE floating - point literal (FPL)
-* Author:			Ababiya / Thipichanth
+* Author:			Sharusshan Sinnadurai
 * History/Versions:	1.0
 * Called Function:  strncpy(), strlen(), memset(),
 * Parameters:		char array lexeme
@@ -548,7 +548,7 @@ Token aa_func08(char lexeme[]) {
 
 /**********************************************************************************************************
 * Purpose:			ACCEPTING FUNCTION FOR THE integer literal(IL)-decimal constant(DIL)
-* Author:			Ababiya / Thipichanth
+* Author:			Sharusshan Sinnadurai
 * History/Versions:	1.0
 * Called Function:  strncpy(), strlen(), memset(),atol(),
 * Parameters:		char array lexeme
@@ -599,7 +599,7 @@ Token aa_func05(char lexeme[]) {
 
 /**********************************************************************************************************
 * Purpose:			ACCEPTING FUNCTION FOR THE string literal(SL)
-* Author:			Ababiya / Thipichanth
+* Author:			Sharusshan Sinnadurai
 * History/Versions:	1.0
 * Called Function:  strncpy(), strlen(), b_addc(),
 * Parameters:		char array lexeme
@@ -638,7 +638,7 @@ Token aa_func10(char lexeme[]) {
 
 /**********************************************************************************************************
 * Purpose:			ACCEPTING FUNCTION FOR THE ERROR TOKEN
-* Author:			Ababiya / Thipichanth
+* Author:			Sharusshan Sinnadurai
 * History/Versions:	1.0
 * Called Function:  strncpy(), strlen(), b_addc(), memset(),
 * Parameters:		char array lexeme
@@ -693,7 +693,7 @@ Token aa_func12(char lexeme[]) {
 
 /**********************************************************************************************************
 * Purpose:			Checking for any keyword matches in the kw_table
-* Author:			Ababiya / Thipichanth
+* Author:			Sharusshan Sinnadurai
 * History/Versions:	1.0
 * Called Function:  strcmp()
 * Parameters:		char array lexeme

@@ -1,7 +1,7 @@
 /*************************************************************************************
 File name :		Parser.c
 Compiler :		MS Visual Studio 15
-Author :		Ababiya Abajobir / Thipichanth Sellathamby
+Author :		Sharusshan Sinnadurai / Sharusshan Sinnadurai
 Course :		CST 8152 – Compilers, Lab Section : 10
 Assignment :	3 - Parser
 Date :			December 07, 2018

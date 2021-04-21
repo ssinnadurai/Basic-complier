@@ -1,7 +1,7 @@
 /*************************************************************************************
 File name :		Buffer.c
 Compiler :		MS Visual Studio 15
-Author :		Thipichanth Sellathamby
+Author :		Sharusshan Sinnadurai
 Course :		CST 8152 – Compilers, Lab Section : 10
 Assignment :	1 - Buffer
 Date :			October 25, 2018
@@ -24,7 +24,7 @@ short b_retract(); short b_reset(); short b_getcoffset(); int b_rewind(); char *
 /*************************************************************************************
 Purpose:		This functions creates the initial buffer and allocates memory based on the
 selected option
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v9.2
 Called f()'s:	None
 
@@ -99,7 +99,7 @@ Buffer * b_allocate(short init_capacity, char inc_factor, char o_mode)
 
 /*************************************************************************************
 Purpose:		Decides where the character should be added in the buffer
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v16.4
 Called f()'s:	b_isfull()
 
@@ -200,7 +200,7 @@ pBuffer b_addc(pBuffer const pBD, char symbol)
 
 /*************************************************************************************
 Purpose:		Clear the buffer and reset required attributes
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.4
 Called f()'s:	None
 Parameters:		pBD which is of type pointer to the Buffer struct
@@ -232,7 +232,7 @@ int b_clear(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Free's the memory space
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.0
 Called f()'s:	None
 Parameters:		Pointer to the Buffer Structure
@@ -257,7 +257,7 @@ void b_free(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Verifies if the buffer is full
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.0
 Called f()'s:	None
 Parameters:		Constant pointer to Buffer structure
@@ -284,7 +284,7 @@ int b_isfull(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		This gets the last character in buffer
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.2
 Called f()'s:	None
 Parameters:		Pointer to the Buffer Struct
@@ -307,7 +307,7 @@ short b_limit(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		This function lets us know the current capacity
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.4
 Called f()'s:	None
 Parameters:		Pointer to the Buffer Structure
@@ -330,7 +330,7 @@ short b_capacity(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Marks a given location in the buffer
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.6
 Called f()'s:	None
 Parameters:		A pointer to the buffer structure and a mark of type short to indicate what
@@ -356,7 +356,7 @@ short b_mark(pBuffer const pBD, short mark)
 
 /*************************************************************************************
 Purpose:		Indicate the mode
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.1
 Called f()'s:	None
 Parameters:		Pointer to the Buffer Structure
@@ -377,7 +377,7 @@ int b_mode(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		How much to increase the buffer by
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v2.5
 Called f()'s:	None
 Parameters:		pointer to the Buffer Structure
@@ -401,7 +401,7 @@ size_t b_incfactor(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		File reading operator
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v10.4
 Called f()'s:	None
 Parameters:		fi which is of file type and also a pointer to the buffer structure
@@ -444,7 +444,7 @@ int b_load(FILE * const fi, Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Checks to see if the buffer is empty
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.2
 Called f()'s:	None
 Parameters:		pointer to the buffer structure
@@ -468,7 +468,7 @@ int b_isempty(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		This is used to read through the buffer character by character
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v8.4
 Called f()'s:	None
 Parameters:		Pointer to buffer structure
@@ -504,7 +504,7 @@ char b_getc(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Checks the end of bit value
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.2
 Called f()'s:	None
 Parameters:		A pointer the buffer Strucutre
@@ -527,7 +527,7 @@ int b_eob(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Prints out everything character by character until the end of bit is flagged
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v8.8
 Called f()'s:	b_isempty()
 Parameters:		Pointer to the Buffer Structure
@@ -570,7 +570,7 @@ int b_print(Buffer * const pBD)
 /*************************************************************************************
 Purpose:		To use the buffer efficiently, will either shrink or expand the buffer
 based on usage.
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v7.2
 Called f()'s:	None
 Parameters:		Pointer to the Buffer Structure and also a character
@@ -624,7 +624,7 @@ Buffer * b_compact(Buffer * const pBD, char symbol)
 
 /*************************************************************************************
 Purpose:		Indicates the R_FLAG BIT value
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.2
 Called f()'s:	None
 Parameters:		pointer to the Buffer Structure
@@ -647,7 +647,7 @@ char b_rflag(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Reduces the Buffer size by one
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.2
 Called f()'s:	None
 Parameters:		Pointer to the buffer structure
@@ -672,7 +672,7 @@ short b_retract(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Resets the getc_offset value
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.2
 Called f()'s:	None
 Parameters:		Pointer to the buffer structure
@@ -694,7 +694,7 @@ short b_reset(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Gets the current value of getc_offset
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.2
 Called f()'s:	None
 Parameters:		Pointer to the Buffer Structure
@@ -716,7 +716,7 @@ short b_getcoffset(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Goes back in the array so it can reread the buffer again
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.2
 Called f()'s:	None
 Parameters:		Pointer to the Buffer Structure
@@ -740,7 +740,7 @@ int b_rewind(Buffer * const pBD)
 
 /*************************************************************************************
 Purpose:		Find a location within the character buffer
-Author:			Thipichanth Sellathamby
+Author:			Sharusshan Sinnadurai
 Versions:		v1.2
 Called f()'s:	None
 Parameters:		Pointer to the buffer structure and location of type short

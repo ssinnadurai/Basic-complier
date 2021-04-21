@@ -2,7 +2,7 @@
 /***************************************************************************
 File name:		buffer.h
 Compiler:		MS Visual Studio 2015
-Author:			Thipichanth Sellathamby / Student # 40682704
+Author:			Sharusshan Sinnadurai
 Course:			CST 8152 – Compilers, Lab Section: 10
 Assignment:		1 - BUFFER
 Date:			October 25, 2018
